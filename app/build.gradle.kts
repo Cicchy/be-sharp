@@ -68,8 +68,16 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    // Room components
-    implementation ("androidx.room:room-runtime:2.5.1")
-    kapt ("androidx.room:room-compiler:2.5.1")
-    implementation ("androidx.room:room-ktx:2.5.1")
+    //Dagger - Hilt
+    implementation ("com.google.dagger:hilt-android:2.38.1")
+    kapt ("com.google.dagger:hilt-android-compiler:2.37")
+    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+    kapt ("androidx.hilt:hilt-compiler:1.0.0")
+
+    // Room
+    implementation ("androidx.room:room-runtime:2.3.0")
+    kapt ("androidx.room:room-compiler:2.3.0")
+
+    // Kotlin Extensions and Coroutines support for Room
+    implementation ("androidx.room:room-ktx:2.3.0")
 }
